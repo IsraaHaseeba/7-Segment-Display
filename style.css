@@ -1,0 +1,252 @@
+body {
+    background: #3b3d3f;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.flex-header{
+    width: 98%;
+    height: 110px;  
+    padding: 5px; 
+    flex-direction: row;
+    border: 1px solid rgb(206, 199, 199) ;
+    opacity: 0.7;
+}
+.flex-header h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+
+.flex-header .logo{
+    position: relative;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.flex-header .logo .image{
+    width: inherit;
+    height: inherit;
+}
+
+.flex-header, .main-content-flex{
+    background-color: #20232e;
+    display: flex;
+    position: fixed;
+}
+.main-content-flex{
+    height: 75%;
+    width: 98.8%;
+    margin-top: 135px;
+    flex-direction: column;
+    border:1px solid rgb(175, 188, 223);
+}
+.controllers-container{
+    
+    display: flex;
+    flex-direction: row;
+    border: none;
+    height: 7%;
+    width: 17%;
+    position: relative;
+    min-width: 160px;
+    margin: 60px 40.5%;
+}
+.text-box{
+    background-color: rgb(212, 209, 208);
+    border-radius:  25px;
+    font-size: 50%;
+    text-align:left;
+    min-width: 130px;
+    width: 100%;
+    color: rgb(15, 14, 14);
+    outline: none;
+    padding-left:10% ;
+    font-size: medium;
+    
+}
+.main-content-flex .display-button{
+    background: rgb(66, 59, 52);
+    position:inherit ;
+    margin-left: -52%;
+    min-width: 60px;
+    border: none;
+    border-radius: 25px;
+    width: 60%;
+    font-size: 70%;
+    text-align:center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+
+.check-box{
+    width: 35%;
+    height: 100%;
+    border-radius: 25px;
+    background:  #b9232f;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 12px -2px rgba(10, 9, 9, 0.5);
+    transition: 2s;
+}
+
+#check-icon{
+    color: white;
+    margin-top: 14px;
+    font-style: oblique;
+    font-size: 100%;
+}
+
+.container-of-display-containers{
+    display: flex;
+    background-color: 1c1d1f;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 40%; 
+    height: 33%;
+    margin-top: 8%;
+    margin-left: 2%;
+    min-width: 250px;
+
+
+}
+.reset{
+    background: inherit;
+    color: #fff;
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: none;
+    margin: 0 2%;
+}
+.display-container {
+    background-color: black;
+	position:relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 2%;
+}
+.display-container .segment-x {
+    position: absolute; 
+	width: 78%;
+    height: 0;
+	border-left: 7px solid ;
+	border-right: 7px solid ;
+}
+
+.display-container .segment-y {
+    position: absolute; 
+	height: 38%;
+	width: 0;
+	border-top: 7px solid;
+	border-bottom: 7px solid;
+
+}
+.display-container .segment-y,
+.display-container .segment-x,
+.a, .b, .d, .g-lower, .g-upper, .f, .e, .c{
+    opacity: 0.2;  
+}
+
+  .a {
+    border-top: 7px solid #b9232f;
+  }
+
+.d { 
+    border-bottom: 7px solid #b9232f;
+    top: 98.5%; 
+  }
+
+  .g-lower{
+    top:48% ;
+    border-bottom: 5px solid #b9232f;
+  
+  
+  }
+  .g-upper{
+    top:51%;
+    border-top: 5px solid #b9232f;
+
+}
+
+.b, .f{
+    top: 2.5%;
+}
+  .e, .c{
+    top: 53%;
+  }
+.b, .c{
+    border-right: 7px solid #b9232f; 
+    left: 94%;
+  }
+.f,.e{
+    right: 93%;
+    border-left: 7px solid #b9232f;
+  
+  }
+  #third-container, #second-container, #first-container{
+    width: 5%;
+    height: 100%;
+    min-width: 60px;
+   
+  }
+ 
+.warning{
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 18%; 
+    min-width: 150px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);  
+}
+
+.warning #non-numeric{
+    width: 30%;
+    position: relative;
+    padding: 2% 2%;
+    display: none;
+    background-color: #fffefe;
+    height: 10%;
+    border-radius: 30px;
+    border: #1c1d1f;
+    margin: auto;
+    color: #b9232f;
+    font-size:larger;
+    outline: #1c1d1f;
+    min-width: 280px;
+}
+.close-button{
+    font-size: large;
+    color: #b9232f;
+    position: relative;
+    top: 5%;
+    opacity: 0.8;
+    cursor: pointer;
+    left :65%;
+    
+}
+.close-button:hover{
+    background-color: #1c1d1f;
+    color: white;
+}
+ 
+
+
+
